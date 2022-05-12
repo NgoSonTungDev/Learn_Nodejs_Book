@@ -27,6 +27,6 @@ app.listen(8000,()=>{
 })
 
 
-app.get("/api",(req,res)=>{
-    res.status(200).json("Hello");
-})
+// app.get("/api",(req,res)=>{
+//     res.status(200).json("Hello");
+// })
