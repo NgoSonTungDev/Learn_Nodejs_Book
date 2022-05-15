@@ -7,6 +7,8 @@ const authorSchema = new mongoose.Schema({
   },
   year: {
     type: Number,
+    required: true,
+
   },
   books: [{ type: mongoose.Schema.Types.ObjectId, ref: "Book" }],
 });
@@ -18,9 +20,13 @@ const bookSchema = new mongoose.Schema({
   },
   publishedDate: {
     type: String,
+    required: true,
+
   },
   genres: {
     type: [String],
+    required: true,
+
   },
   author: {
     type: mongoose.Schema.Types.ObjectId,
